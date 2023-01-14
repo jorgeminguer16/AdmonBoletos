@@ -11,6 +11,8 @@ make build
 make run
 python3 wsgi.py <-- para correrlo de manera local sin docker
 
+crear la bd eventos_bd
+
 ```
 Antes de ejecutar la aplicación, debe configurar las siguientes variables de entorno de esta manera:
 ```
