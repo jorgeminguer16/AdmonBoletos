@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  Administración de boletos para sus eventos | Home
+{% endblock %}
+
+{% block body %}
+
+  <div class="card" >
+        <div class="card-header">
+          {{ event.name }}
+        </div>
+
+        <div class="card-body">
+           <ul class="list-group list-group-flush">
+             <li class="list-group-item"><strong>Fecha Inicio:</strong> {{ event.start_date }} </li>
+             <li class="list-group-item"><strong>Fecha Finalización:</strong> {{ event.end_date }} </li>
+             <li class="list-group-item"><strong>Cantidad de Boletos:</strong> {{ event.available_tickets }} </li>
+             <li class="list-group-item"><strong>Boletos Vendidos:</strong> {{ event.tickets_sold }} </li>
+             <li class="list-group-item"><strong>Boletos Disponibles:</strong> {{ event.available_tickets - event.tickets_sold }} </li>
+             <li class="list-group-item"><strong>Boletos Canjeados:</strong> {{ event.redeemed_tickets }} </li>
+          </ul>
+
+        </div>
+  </div>
+
+{% endblock %}

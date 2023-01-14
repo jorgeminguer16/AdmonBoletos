@@ -1,0 +1,39 @@
+
+{% extends 'layout.html' %}
+{% from "helpers/_formhelpers.html" import render_field %}
+{% block title %}
+  Administración de boletos para sus eventos | Home
+{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+
+      <div class="col-md-12 p-5">
+        <!-- MESSAGE -->
+        {% include 'partials/_message.html' %}
+      </div>
+
+    </div>
+    <!-- FORM -->
+    <form action="{{ url_for('tickets.sell_ticket') }}" method="POST" class="card">
+      <div class="card-body p-4">
+        <h1 class="h5 mb-4">Vender Boleto</h1>
+         <dl>
+          {{ render_field(form.client_name, class="form-control") }}
+          {{ render_field(form.client_last_name, class="form-control") }}
+          {{ render_field(form.price, class="form-control") }}
+          {{ render_field(form.event_id, class="form-select") }}
+        </dl>
+
+        <button class="btn btn-primary">Vender</button>
+      </div>
+    </form>
+
+
+
+
+
+
+{% endblock %}
+
