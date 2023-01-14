@@ -5,7 +5,7 @@ Este proyecto es un servicio para la administración de boletos de eventos que u
 ### Instalación con docker-compose y Makefile
 
 ```
-git clone https://github.com/FaztWeb/flask-sqlalchemy-crud
+git clone https://github.com/jorgeminguer16/PruebaTecnica_AdmonBoletos.git
 cd admon_boletos
 make build
 make run
