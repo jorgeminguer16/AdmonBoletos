@@ -9,8 +9,17 @@ git clone https://github.com/jorgeminguer16/PruebaTecnica_AdmonBoletos.git
 cd admon_boletos
 make build
 make run
-```
+python3 wsgi.py <-- para correrlo de manera local sin docker
 
+```
+Antes de ejecutar la aplicación, debe configurar las siguientes variables de entorno de esta manera:
+```
+MYSQL_USER=root
+MYSQL_ROOT_PASSWORD=root
+MYSQL_PASSWORD=root
+MYSQL_HOST=db
+MYSQL_DATABASE=eventos_db
+```
 
 ##### Requerimientos
 
