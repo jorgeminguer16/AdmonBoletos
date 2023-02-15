@@ -7,11 +7,8 @@ Este proyecto es un servicio para la administración de boletos de eventos que u
 ```
 git clone https://github.com/jorgeminguer16/PruebaTecnica_AdmonBoletos.git
 cd admon_boletos
-make build
-make run
-python3 wsgi.py <-- para correrlo de manera local sin docker
-
-crear la bd eventos_bd
+Para ejecutar el código se utiliza el comando "python3 wsgi.py"
+En otra terminal realizar las migraciones con el comando "flask db upgrade"
 
 ```
 Antes de ejecutar la aplicación, debe configurar las siguientes variables de entorno de esta manera:
